@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="startupSection">
+      <div>
+        <h1 class="gameStartup">
+          <span style="color: aqua">Rock</span> &nbsp;
+          <span style="color: yellow">Paper</span> &nbsp;
+          <span style="color: red">Scissor</span>
+        </h1>
+      </div>
+      <div class="startDiv">
+        <button class="startBtn" onclick="startTheGame()">Shoot!</button>
+      </div>
+    </section>
+    <section id="rpsGame" style="display: none">
+      <div id="gameHeader">
+        <h3 class="flagText" id="playerScore">0</h3>
+        <img src="./images/p1-flag-img.png" alt="" class="flagImages" />
+        <h2 id="header">
+          Win the game in a best-of-5 to make it more challenging! 🤩
+        </h2>
+        <h3 class="flagText" id="computerScore">0</h3>
+        <img src="./images/p2-flag-img.png" alt="" class="flagImages" />
+      </div>
+      <div id="p1-p2-div">
+        <div id="player">
+          <img
+            src="./images/rock-p1-img.png"
+            alt="player 1 rock"
+            class="p1-p2-rock"
+            id="initialMove"
+          />
+          <h3 id="playerLabel" class="label">Player</h3>
+        </div>
+        <div id="computer">
+          <img
+            src="./images/rock-p2-img.png"
+            alt="player 2 rock"
+            class="p1-p2-rock"
+            id="computerMove"
+          />
+          <h3 id="computerLabel" class="label">Computer</h3>
+        </div>
+      </div>
+      <div id="movesDiv">
+        <button class="rpsBtn move" id="rock" onclick="getPlayerMove('rock')">
+          <img src="./images/rock-p1-img.png" alt="rock" class="rpsImages" />
+        </button>
+        <button class="rpsBtn move" id="paper" onclick="getPlayerMove('paper')">
+          <img src="./images/paper-p1-img.png" alt="paper" class="rpsImages" />
+        </button>
+        <button
+          class="rpsBtn move"
+          id=" scissors"
+          onclick="getPlayerMove('scissors')"
+        >
+          <img
+            src="./images/scissors-p1-img.png"
+            alt="scissors"
+            class="rpsImages"
+          />
+        </button>
+      </div>
+      <button id="resetGame" onclick="resetGame()" style="display: none">
+        Restart the game
+      </button>
+      <button id="levelUp" onclick="levelUp()" style="display: flex">
+        Level up the game
+      </button>
+    </section>
+    <section id="minusOneGame" style="display: none">
+      <h1>COMING SOON!</h1>
+      <!-- <div>
+        <h1 class="gameStartup">
+          <span style="color: aqua">Rock</span> &nbsp;
+          <span style="color: yellow">Paper</span> &nbsp;
+          <span style="color: red">Scissor</span>
+        </h1>
+      </div>
+      <div class="startDiv">
+        <button class="startBtn" onclick="rpsMinusOne()">MINUS ONE</button>
+      </div> -->
+    </section>
+  </body>
+</html>
+<!-- <h2 id="instructions">
+          <ul>
+            <li>
+              <span class="boldText">Choose 2 options</span>: Rock, Paper, or
+              Scissors.
+            </li>
+            <br />
+            <li>
+              Check your opponent's choice and
+              <span class="boldText">remove 1</span> from your previous choices.
+            </li>
+            <br />
+            <li>Use the remaining option as your attack.</li>
+          </ul>
+        </h2> -->

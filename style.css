@@ -1,0 +1,179 @@
+body {
+  background-color: #030630;
+  text-shadow: 0px 0px 20px black;
+}
+
+li {
+  all: unset;
+}
+
+.boldText {
+  font-weight: bold;
+  color: blue;
+}
+
+.gameStartup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: white;
+  margin: 10rem 0rem 5rem 0rem;
+}
+
+#minusOneGame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  color: white;
+  margin: 2rem 0rem 5rem 0rem;
+}
+
+.startDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.startBtn,
+#resetGame {
+  padding: clamp(1rem, 2vw, 2rem) clamp(2rem, 5vw, 5rem);
+  border-radius: 25px;
+  font-size: clamp(2rem, 10vw, 4rem);
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: green;
+  box-shadow: 0px 0px 20px black;
+}
+
+#resetGame,
+#levelUp {
+  padding: 1.5rem 2.5rem;
+  border-radius: 25px;
+  font-size: 2rem;
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: green;
+  box-shadow: 0px 0px 20px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.startBtn:hover,
+#resetGame:hover,
+#levelUp:hover {
+  background-color: green;
+  color: white;
+}
+
+#rpsGame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  width: 100%;
+  color: white;
+  font-size: clamp(2rem, 10vw, 3rem);
+  text-align: center;
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: unset;
+}
+
+.rpsImages {
+  width: 8rem;
+  padding: 0rem clamp(1rem, 3vw, 3rem);
+}
+
+.p1-p2-rock {
+  width: 20rem;
+  margin-bottom: 2rem;
+  margin: unset;
+}
+
+#p1-p2-div {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.label {
+  color: white;
+  font-size: 3rem;
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin: unset;
+  margin-top: -3rem;
+}
+
+.rpsBtn {
+  all: unset;
+}
+
+.rpsBtn:hover {
+  transform: scale(1.5);
+}
+
+.flagImages {
+  height: 3rem;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+#gameHeader {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flagText {
+  color: white;
+  font-size: 5rem;
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: unset;
+  margin-top: 0rem;
+}
+
+#movesDiv {
+  padding: 2rem 0rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+#instructions {
+  color: white;
+  text-align: center;
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
